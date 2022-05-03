@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+}
+
+body {
+  background-color: rgb(243, 244, 245);
+  height: 1000px;
+}
+
+.background {
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(
+      #1d1d1d 25%,
+      #1a1a1a 25%,
+      #1a1a1a 50%,
+      transparent 50%,
+      transparent 75%,
+      #242424 75%,
+      #242424
+    );
+  background-color: #131313;
+  background-size: 20px 20px;
+}
+
+.centerProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 400px;
+}
+h2 {
+  color: #d4d1d1;
+}
+
+.containerProfile {
+  border-radius: 100%;
+  border: 5px solid rgba(255, 255, 255, 0.212);
+  overflow: hidden;
+}
+
+.containerProfile img {
+  width: 150px;
+  height: 100%;
+}
+
+.card {
+  position: absolute;
+  top: -50px;
+  background-color: #fff;
+  width: 60%;
+  border-radius: 4px;
+  transition: all ease 0.5s;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.cardItem {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cardItem i {
+  font-size: 2rem;
+  padding-right: 10px;
+}
+.textCard {
+  border-left: 3px solid #000;
+  height: fit-content;
+}
+.textCard p {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.content {
+  margin-top: 300px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .card {
+    flex-direction: column;
+  }
+}
